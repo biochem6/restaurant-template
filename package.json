@@ -1,0 +1,19 @@
+{
+  "name": "restauranttemplate",
+  "version": "1.0.0",
+  "description": "Template Website for Portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Restaurant",
+    "Template"
+  ],
+  "author": "Andrew Ashland",
+  "license": "ISC",
+  "dependencies": {
+    "emmet": "^1.6.3",
+    "express": "^4.16.3"
+  }
+}
