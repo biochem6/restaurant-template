@@ -260,7 +260,7 @@ html {
     body {
         margin: 0;
         padding: 0;
-        height: 100vh;
+        height: calc(100vh-10px);
         background-image: url("images/food-salad-healthy-lunch.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -273,6 +273,7 @@ html {
         grid-template-rows: 3.8rem;
         background-color: black;
         margin: 0;
+        top: 0px;
         border-bottom: 0.2rem solid slategray;
         
     }

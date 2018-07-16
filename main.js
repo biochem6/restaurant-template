@@ -2,7 +2,7 @@ window.onload = () => {
 
 
 document.getElementById('menu').addEventListener('click', () => {
-    window.open('menu.html');
+    window.open('html/menu.html');
 }); 
 document.getElementById('contact').addEventListener('click', () => {
     window.open('contact.html');
