@@ -319,6 +319,7 @@ html {
     }
 
     .main {
+        margin-top: 3%; 
         text-align: center;
         display: flex;
         align-items: center;
@@ -379,7 +380,24 @@ html {
         font-weight: 400; 
         
     }
+
+    .social_media {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    i.fab {
+        font-size: 4rem;
+        margin: 1rem 2rem 0 2rem;
+    }
     
+    i.fab:hover {
+        color: white;
+        transition-delay: 75ms;
+        transition-duration: 50ms;
+        cursor: pointer;
+    }
+
     button:hover {
         background-color: black;
         color: white;

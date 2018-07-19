@@ -8,7 +8,7 @@ document.getElementById('contact').addEventListener('click', () => {
     window.open('contact.html');
 });
 document.getElementById('gallery').addEventListener('click', () => {
-    window.open('gallery.html');
+    window.open('html/gallery.html');
 });
 document.getElementById('about').addEventListener('click', () => {
     window.open('about.html');
