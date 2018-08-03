@@ -129,9 +129,7 @@ html {
 
 
 /*------------------TABLET---------------------------*/
-
-
-@media only screen and (min-width: 767px) and (max-width: 1025px) {
+@media only screen and (min-width: 425px) and (max-width: 766px) {
     
     body {
         margin: 0;
@@ -166,29 +164,45 @@ html {
         font-size: 1.2rem;
         padding-left: 10px;
     }
-    .menu_container {
+
+    .social_media {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 5%;
+        margin-right: 5%;
     }
 
-    .menu { 
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1rem;
-        font-weight: 800;
-        height: 4rem;
-        width: 6rem;
+    i.fab {
+        color: white;
+        font-size: 2rem;
     }
+
+
+    #facebook:hover {
+        color: #3B5998;
+        cursor: pointer
+    }
+
+    #twitter:hover {
+        color: #1DA1F2;
+        cursor: pointer;
+    }
+
+    #facebook {
+        margin-right: 2rem;
+    }
+
+
+    
 /*---------------HEADER END--------------------*/
 
     .wrapper {
-        height: 75vh;
+        height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-
     .main {
         text-align: center;
     }
@@ -196,46 +210,196 @@ html {
     .generic_text {
         font-family: "IM Fell English SC", serif;
         color: white;
-        font-weight: 500;
-        line-height: 2.5rem;
-        font-size: 1.8rem;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        line-height: 4rem;
+        font-size: 2.2rem;
+        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
-        margin: 25% 5% 0 5%;
-        padding: 5px;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-rows: 2fr 10%;
-        margin-top: 25%;
-    }
-
-    .footer_div {
+        height: 8rem;
         display: flex;
-        justify-content: space-evenly;
-        
+        align-items: ce2nter;
+        justify-content: center;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
-    .butt_bottom {
+     .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+      .butt_bottom {
         font-size: 1rem;
-        font-weight: 700;
-        height: 3.5rem;
-        width: 6rem;
+        font-weight: 600;
+        height: 2.5rem;
+        width: 6.5rem;
         font-family: "Cinzel Decorative", cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8%;
+        border: 1px solid black;
     }
-
+    
     .hours {
         text-align: center;
         color: white;
         background: black;
+        padding: 15px;
+        font-family: Times New Roman, white;
+        font-size: 1rem;
+        border: 2px outset white;
+        line-height: 1.5rem;
+        margin-top: 10%;
+        opacity: 0.9;
+        
+    }
+    
+    button:hover {
+        background-color: black;
+        color: white;
+        transition-delay: 75ms;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
+    
+    html {
+       
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: black;
+        background-image: url("images/food-salad-healthy-lunch.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 55%;   
+    }
+    
+/* --------------HEADER/NAV BAR--------------------*/
+
+    .header {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 5rem;
+        background-color: black;
+        margin: 0;
+    }
+
+    .name_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+      
+    }
+
+    .rest_name {
+        color: white;
+        font-family: "Cinzel Decorative", cursive;
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .social_media {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    i.fab {
+        color: white;
+        font-size: 2rem;
+    }
+
+
+    #facebook:hover {
+        color: #3B5998;
+        cursor: pointer
+    }
+
+    #twitter:hover {
+        color: #1DA1F2;
+        cursor: pointer;
+    }
+
+    #facebook {
+        margin-right: 2rem;
+    }
+
+
+    
+/*---------------HEADER END--------------------*/
+
+    .wrapper {
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        text-align: center;
+    }
+
+    .generic_text {
+        font-family: "IM Fell English SC", serif;
+        color: white;
+        line-height: 4rem;
+        font-size: 2.2rem;
+        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        background-color: black;
         opacity: 0.8;
-        padding: 5px;
-        margin: 5rem 5% 0 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 300; 
-        font-size: 0.8rem;
+        height: 8rem;
+        display: flex;
+        align-items: ce2nter;
+        justify-content: center;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+     .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+      .butt_bottom {
+        font-size: 1rem;
+        font-weight: 600;
+        height: 2.5rem;
+        width: 6.5rem;
+        font-family: "Cinzel Decorative", cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8%;
+        border: 1px solid black;
+    }
+    
+    .hours {
+        text-align: center;
+        color: white;
+        background: black;
+        padding: 15px;
+        font-family: Times New Roman, white;
+        font-size: 1rem;
+        border: 2px outset white;
+        line-height: 1.5rem;
+        margin-top: 10%;
+        opacity: 0.9;
         
     }
     
@@ -293,21 +457,33 @@ html {
         font-size: 1.2rem;
         padding-left: 10px;
     }
-    .menu_container {
+
+    .social_media {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 5%;
+        margin-right: 5%;
     }
 
-    .menu { 
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1.3rem;
-        font-weight: 600;
-        height: 3.2rem;
-        width: 6rem;
-        background-color: lightgrey;
+    i.fab {
+        color: white;
+        font-size: 3rem;
     }
+
+    #facebook:hover {
+        color: #3B5998;
+        cursor: pointer;
+    }
+
+    #twitter:hover {
+        color: #1DA1F2;
+        cursor: pointer;
+    }
+
+    #facebook {
+        margin-right: 2rem;
+    }
+
 /*---------------HEADER END--------------------*/
 
     .wrapper {
@@ -319,84 +495,63 @@ html {
     }
 
     .main {
-        margin-top: 3%; 
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+        display: grid;
+        grid-template-rows: 3fr;
     }
 
-    .generic_text {
+     .generic_text {
         font-family: "IM Fell English SC", serif;
         color: white;
         font-weight: 500;
-        line-height: 3.5rem;
-        font-size: 2.4rem;
-        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        line-height: 4.5rem;
+        font-size: 2.8rem;
+        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
-        width: 35rem;
         height: 20rem;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20%;
-        padding: 10px;
+        width: 45rem;
     }
 
-    .footer {
-        margin-top: 5rem;
-        width: 100%
-    }
-
-    .footer_div {
+    .buttons {
         display: flex;
-        justify-content: space-evenly;
-        margin-right: 20%;
-        margin-left: 20%;
-        
+        justify-content: space-between;
     }
+
+    
 
     .butt_bottom {
         font-size: 1.5rem;
+        color: ;
         font-weight: 600;
         height: 3.8rem;
-        width: 8.5rem;
+        width: 9.0rem;
         font-family: "Cinzel Decorative", cursive;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 8%;
+        border: 1px solid black;
     }
     
     .hours {
         text-align: center;
         color: white;
         background: black;
-        opacity: 0.8;
-        padding: 5px;
-        margin: 5rem 32% 0 32%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400; 
+        padding: 15px;
+        font-family: Times New Roman, white;
+        font-size: 1.2rem;
+        border: 2px outset white;
+        line-height: 2rem;
+        margin-top: 10%;
+        opacity: 0.9;
         
     }
 
-    .social_media {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-    i.fab {
-        font-size: 4rem;
-        margin: 1rem 2rem 0 2rem;
-    }
-    
-    i.fab:hover {
-        color: white;
-        transition-delay: 75ms;
-        transition-duration: 50ms;
-        cursor: pointer;
-    }
 
     button:hover {
         background-color: black;
