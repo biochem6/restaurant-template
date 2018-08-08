@@ -9,44 +9,6 @@ body {
     padding: 0;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    grid-template-rows: 4.0rem;
-    background-color: black;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-.name_div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-  
-}
-
-.rest_name {
-    color: white;
-    font-family: "Cinzel Decorative", cursive;
-    font-size: 1.0rem;
-    padding-left: 10px;
-}
-.menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5%;
-}
-
-.menu { 
-    font-family: "Cinzel Decorative", cursive;
-    font-size: 1rem;
-    font-weight: 800;
-    height: 3.5rem;
-    width: 5.0rem;
-}
-
 .grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 

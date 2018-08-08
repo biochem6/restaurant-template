@@ -1,128 +1,95 @@
 html {
-    height: 100vh;
+    position: absolute;
+    height: 100%;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
-
 /*------------------MOBILE---------------------------*/
-
 
 @media only screen and (max-width: 425px) {
     
     body {
         margin: 0;
         padding: 0;
-        height: 100vh;
         background-image: url("images/food-salad-healthy-lunch.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
-/* --------------HEADER/NAV BAR--------------------*/
-
-    .header {
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: 5rem;
-        background-color: black;
-        margin: 0;
-    }
-
-    .name_div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-      
-    }
-
-    .rest_name {
-        color: white;
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
-    .menu_container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 5%;
-    }
-
-    .menu { 
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1rem;
-        font-weight: 800;
-        height: 4rem;
-        width: 6rem;
-    }
-/*---------------HEADER END--------------------*/
 
     .wrapper {
-        height: 75vh;
+        height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .main {
         text-align: center;
+        display: grid;
+        grid-template-rows: 3fr;
     }
 
     .generic_text {
         font-family: "IM Fell English SC", serif;
         color: white;
         font-weight: 500;
-        line-height: 2.5rem;
-        font-size: 1.8rem;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        line-height: 2.0rem;
+        font-size: 1.0rem;
+        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
-        margin: 25% 5% 0 5%;
-        padding: 5px;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-rows: 2fr 10%;
-        margin-top: 25%;
-    }
-
-    .footer_div {
+        height: 8rem;
         display: flex;
-        justify-content: space-evenly;
-        
+        align-items: center;
+        justify-content: center;
+        margin: 5% 20% 0 20%;
     }
 
-    .butt_bottom {
-        font-size: 1rem;
-        font-weight: 700;
-        height: 3.5rem;
-        width: 6rem;
+    .anchors {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .anchor_bottom {
+        font-size: 1.5rem;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        height: 3.8rem;
+        width: 9.0rem;
         font-family: "Cinzel Decorative", cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8%;
+        border: 1px solid black;
+        text-decoration: none;
     }
-
+    
     .hours {
         text-align: center;
         color: white;
         background: black;
-        opacity: 0.8;
-        padding: 5px;
-        margin: 5rem 5% 0 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 300; 
-        font-size: 0.8rem;
+        padding: 15px;
+        font-family: Times New Roman, white;
+        font-size: 1.2rem;
+        border: 2px outset white;
+        line-height: 2rem;
+        margin-top: 10%;
+        opacity: 0.9;
         
     }
-    
-    button:hover {
+
+    a:hover {
         background-color: black;
         color: white;
         transition-delay: 75ms;
         cursor: pointer;
+        border: 1px outset white;
     }
-
 }
 
 /*--------------------MOBILE END---------------------------*/
@@ -140,62 +107,6 @@ html {
         background-repeat: no-repeat;
     }
     
-/* --------------HEADER/NAV BAR--------------------*/
-
-    .header {
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: 5rem;
-        background-color: black;
-        margin: 0;
-    }
-
-    .name_div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-      
-    }
-
-    .rest_name {
-        color: white;
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
-
-    .social_media {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 5%;
-    }
-
-    i.fab {
-        color: white;
-        font-size: 2rem;
-    }
-
-
-    #facebook:hover {
-        color: #3B5998;
-        cursor: pointer
-    }
-
-    #twitter:hover {
-        color: #1DA1F2;
-        cursor: pointer;
-    }
-
-    #facebook {
-        margin-right: 2rem;
-    }
-
-
-    
-/*---------------HEADER END--------------------*/
-
     .wrapper {
         height: 95%;
         display: flex;
@@ -203,6 +114,7 @@ html {
         justify-content: center;
         align-items: center;
     }
+
     .main {
         text-align: center;
     }
@@ -212,7 +124,7 @@ html {
         color: white;
         line-height: 4rem;
         font-size: 2.2rem;
-        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
         height: 8rem;
@@ -224,15 +136,16 @@ html {
         padding-bottom: 1.5rem;
     }
 
-     .buttons {
+    .anchors {
         display: flex;
         justify-content: space-between;
     }
 
-
-      .butt_bottom {
+    .anchor_bottom {
         font-size: 1rem;
         font-weight: 600;
+        background-color: white;
+        color: black;
         height: 2.5rem;
         width: 6.5rem;
         font-family: "Cinzel Decorative", cursive;
@@ -241,6 +154,7 @@ html {
         justify-content: center;
         margin-top: 8%;
         border: 1px solid black;
+        text-decoration: none;
     }
     
     .hours {
@@ -253,11 +167,10 @@ html {
         border: 2px outset white;
         line-height: 1.5rem;
         margin-top: 10%;
-        opacity: 0.9;
-        
+        opacity: 0.9;   
     }
     
-    button:hover {
+    a:hover {
         background-color: black;
         color: white;
         transition-delay: 75ms;
@@ -271,10 +184,6 @@ html {
 
 @media only screen and (min-width: 767px) and (max-width: 1025px) {
     
-    html {
-       
-    }
-
     body {
         margin: 0;
         padding: 0;
@@ -286,62 +195,6 @@ html {
         background-position-y: 55%;   
     }
     
-/* --------------HEADER/NAV BAR--------------------*/
-
-    .header {
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: 5rem;
-        background-color: black;
-        margin: 0;
-    }
-
-    .name_div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-      
-    }
-
-    .rest_name {
-        color: white;
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
-
-    .social_media {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 5%;
-    }
-
-    i.fab {
-        color: white;
-        font-size: 2rem;
-    }
-
-
-    #facebook:hover {
-        color: #3B5998;
-        cursor: pointer
-    }
-
-    #twitter:hover {
-        color: #1DA1F2;
-        cursor: pointer;
-    }
-
-    #facebook {
-        margin-right: 2rem;
-    }
-
-
-    
-/*---------------HEADER END--------------------*/
-
     .wrapper {
         height: 95%;
         display: flex;
@@ -349,6 +202,7 @@ html {
         justify-content: center;
         align-items: center;
     }
+
     .main {
         text-align: center;
     }
@@ -358,7 +212,7 @@ html {
         color: white;
         line-height: 4rem;
         font-size: 2.2rem;
-        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
         height: 8rem;
@@ -370,23 +224,25 @@ html {
         padding-bottom: 1.5rem;
     }
 
-     .buttons {
+    .anchors {
         display: flex;
         justify-content: space-between;
     }
 
-
-      .butt_bottom {
+    .anchor_bottom {
         font-size: 1rem;
         font-weight: 600;
         height: 2.5rem;
         width: 6.5rem;
+        background-color: white;
+        color: black;
         font-family: "Cinzel Decorative", cursive;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 8%;
         border: 1px solid black;
+        text-decoration: none;
     }
     
     .hours {
@@ -403,11 +259,12 @@ html {
         
     }
     
-    button:hover {
+    a:hover {
         background-color: black;
         color: white;
         transition-delay: 75ms;
         cursor: pointer;
+        border: 1px outset white;
     }
 
 }
@@ -424,67 +281,11 @@ html {
     body {
         margin: 0;
         padding: 0;
-        height: calc(100vh-10px);
         background-image: url("images/food-salad-healthy-lunch.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 55%;
     }
-
-    .header {
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: 3.8rem;
-        background-color: black;
-        margin: 0;
-        top: 0px;
-        border-bottom: 0.2rem solid slategray;
-        
-    }
-
-    .name_div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        padding-left: 2%;
-      
-    }
-
-    .rest_name {
-        color: white;
-        font-family: "Cinzel Decorative", cursive;
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
-
-    .social_media {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 5%;
-    }
-
-    i.fab {
-        color: white;
-        font-size: 3rem;
-    }
-
-    #facebook:hover {
-        color: #3B5998;
-        cursor: pointer;
-    }
-
-    #twitter:hover {
-        color: #1DA1F2;
-        cursor: pointer;
-    }
-
-    #facebook {
-        margin-right: 2rem;
-    }
-
-/*---------------HEADER END--------------------*/
 
     .wrapper {
         height: 95%;
@@ -500,13 +301,13 @@ html {
         grid-template-rows: 3fr;
     }
 
-     .generic_text {
+    .generic_text {
         font-family: "IM Fell English SC", serif;
         color: white;
         font-weight: 500;
-        line-height: 4.5rem;
+        line-height: 6.0rem;
         font-size: 2.8rem;
-        text-shadow -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
         background-color: black;
         opacity: 0.8;
         height: 20rem;
@@ -517,16 +318,15 @@ html {
         width: 45rem;
     }
 
-    .buttons {
+    .anchors {
         display: flex;
         justify-content: space-between;
     }
 
-    
-
-    .butt_bottom {
+    .anchor_bottom {
         font-size: 1.5rem;
-        color: ;
+        background-color: white;
+        color: black;
         font-weight: 600;
         height: 3.8rem;
         width: 9.0rem;
@@ -536,6 +336,7 @@ html {
         justify-content: center;
         margin-top: 8%;
         border: 1px solid black;
+        text-decoration: none;
     }
     
     .hours {
@@ -552,13 +353,13 @@ html {
         
     }
 
-
-    button:hover {
+    a:hover {
         background-color: black;
         color: white;
         transition-delay: 75ms;
         cursor: pointer;
+        border: 1px outset white;
     }
 }
-    /*----------------HEADER/NAV END ----------------------*/
+ 
 
